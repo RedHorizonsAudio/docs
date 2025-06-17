@@ -1,0 +1,43 @@
+R5 Reloaded tree:
+
+
+- LIVE / PTC
+	- audio (self describing)
+	- bin (precompiled binaries of tools; r5 Reloaded has extra binaries compared to Retail Apex, like "netcon.exe", "recast.exe", "repak.exe" and "revpk.exe", accompanied by .bat files for batch processing)
+	- cfg (configuration files - CPU allocation, RAM allocation, GPU allocation, client and server)
+	- license (licenses for things like third party tools used in development)
+	- materials (material correction - high dynamic range / HDR corrections of assets like ability effects, etc.)
+	- media (extra media like BINK videos for the battlepasses, dive trails, gamemode previews, the game's intro, etc.)
+	- mods (r5 Reloaded's native integration of mods)
+	- paks (.RPAK and .STARPAK / Streamable RPAK compressed packages, Respawn's proprietary format containing assets like models, animations, rigs, textures, sounds, etc.)
+	- platform (r5 Reloaded custom folder which includes decompressed fonts, UI elements, plaintext key-value pair / keyvalue files, squirrel_re scripts, playlist files, debugging symbols in .pdb files, etc.)
+		- cfg (config files such as multiple types of autoexecs, server admin configs with RCON protocols, etc.)
+		- liveapi
+		- logs (different types of logs for game sessions, such as net traces, errors, warnings, script warnings, etc.)
+		- maps (empty)
+		- mods
+		- resource (fonts, UI elements for menus, etc., localization strings and the text they correspond to)
+			- localization (self-explanatory)
+			- overviews
+			- ui (self-explanatory)
+		- screenshots
+		- scripts (contains vscripts - valve's proprietary game scripting format in Squirrel, forked and modified at version 2.6 by Respawn to suit their development needs, known as Squirrel_re - , contains auto-generated lists of all constants in the game, lists of hud textures, animations, surface properties, key-value pair / keyvalue files, impact tables, damage tables, audio soundscape containers, audio DSP information for different environments, etc.)
+			- aibehavior (self-explanatory)
+			- aisettings (self-explanatory)
+			- audio (self-explanatory)
+			- damage (damagedefs contains leftovers from Titanfall, defining damage types  and damageflags contains flags for various types of damage, still used in weapon keyvalue files in Apex)
+			- defaults (17.06.2025: unused, ignore)
+			- impacts (impact table keyvalue files listing sounds, effects, etc. for various types of impacts)
+			- levels (contains .rson (Respawn mod of .json - Javascript Object Notation) files corresponding to maps, listing shared squirrel_re vscripts used by maps regardless of CLIENT or SERVER and CLIENT and SERVER specific scripts)
+			- resource
+				- ui
+					- menus (self-explanatory, contains key-value pair files with the extension menu which serve as data tables for menus)
+			- screens (key-value pair files setting parameters for vgui files - proprietary Valve GUI format, used from Titanfall 1 all the way up to Apex)
+			- spawns (17.06.25 - ignore, serves as a container for outputting generated spawn tool files)
+			- turrets (leftovers from Titanfall)
+			- vscripts (Valve Scripts in squirrel_re)
+			- weapons (key-value pair files containing parameter values for weapons, attachments and abilities. R5 Reloaded uses a custom key-value reader which uses #base for passing on data to be inherited by other key-value files)
+		- playlists_r5_patch (plaintext file containing key-value pairs to configure various playlists)
+		- symbols (symbols for debugging purposes by the R5 Reloaded devs)
+	- stbsp (contains streamable Binary Space Partitioning / .bsp files for maps)
+	- vpk (contains assets in the form of Valve Pack / .vpk files, a proprietary file format made by Valve and then modified by Respawn to suit their development needs)
